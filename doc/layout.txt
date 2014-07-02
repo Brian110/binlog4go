@@ -1,0 +1,19 @@
+[mysql|+Open();+Close();+Query();+ScanRow(){bg:green}]
+[init|-init();-auth(){bg:wheat}]
+[packet]
+[command]
+[field]
+[result]
+[row]
+[mysql]->[init]
+[mysql]->[command]
+[mysql]->[field]
+[mysql]->[result]
+[mysql]->[row]
+[result]->[row]
+[init]->[packet]
+[command]->[packet]
+
+
+// mysql moudle
+[连接上下文{bg:wheat}]
